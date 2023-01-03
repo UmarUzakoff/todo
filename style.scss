@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 50px;
+    min-height: 100vh;
+    background-image: url(/img/bg-desktop-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ECFBFF;
+    font-size: 40px;
+  }
+
+  form {
+    color: #ECFBFF;
+  }
+
+  .container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    input{
+        font-family: 'Teko', sans-serif;
+        background: url(/img/aa.jpg);
+        background-repeat: no-repeat;
+        background-size: 1200px;
+        color: whitesmoke;
+        font-size: 18px;
+        border-radius: 10px;
+        padding: 10px 80px;
+    }
+  }
+
+  #posts {
+    width: 400px;
+    font-family: 'Dancing Script';
+    font-size: 22px;
+    background: url(/img/bg.jpg);
+    padding: 0 10px;
+    border-radius: 10px;
+    color: #ECFBFF;
+  }
+  
+  i {
+    cursor: pointer;
+  }
+
+  #posts div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .options {
+    display: flex;
+    gap: 25px;
+  }
+  
+  #msg {
+    color: red;
+  }
+
+  .button {
+    font-size: 19px;
+    font-family: 'Rubik Bubbles';
+    overflow: visible;
+    border-radius: 3px;
+    padding: 10px 20px;
+    position: relative;
+    background-color: #ECFBFF;
+    border: 2px solid #A6E0EE;
+    color: #2D7586;
+    display: block;
+    cursor: pointer;
+  
+    &:hover {
+        background-color: #DDF7FF;
+    }
+  }
+
+  @media (max-width: 700px) {
+    form {
+      color: black;
+    }
+  }
+
+  @media (max-width: 450px) {
+
+    form {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #posts {
+      width: 280px;
+    }
+  }
+
+  @media (max-width: 330px) {
+
+    form {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #posts {
+      width: fit-content;
+    }
+  }
+
+  .fas:hover {
+    color: aqua;
+  }
+
+  .fas:active {
+    color: aqua;
+  }
